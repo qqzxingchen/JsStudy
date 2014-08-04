@@ -1,0 +1,27 @@
+<!--
+    作用机制：
+    1：html被加载
+    2：html被加载到 <script src = "script.js"></script> 时，开始加载script文件
+    3：script文件被加载，因为是直接alert，所以它将会显示一个模态对话框，来显示alert中的内容
+        但是因为某些浏览器不支持alert，所以script将会加载失败，模态对话框将无法显示；
+        之后html继续加载，一直到<noscript>标签页时
+        因为浏览器不支持script，那么<noscript>标签内的内容将会被加载
+    4：而如果浏览器支持script，那么html将会被继续加载
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src = "script.js"></script>
+</head>
+<body>
+    <h1>
+        there is nothing!!!
+    </h1>
+<noscript>
+    <h1>
+        there is nothing!!!
+    </h1>
+</noscript>
+</body>
+</html>

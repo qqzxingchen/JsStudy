@@ -1,0 +1,18 @@
+
+<!--
+    因为script作用是在加载完毕标签之后，所以对于标签 <a href = "index1.html">
+    原来定位是index.html，但是由于script重写了onclick函数，因此将不会导向index.html
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src = "script.js"></script>
+</head>
+    <h2 class = "centered">
+        <a href = "index1.html" id = "redirect">
+            welcome to our website
+        </a>
+    </h2>
+</body>
+</html>

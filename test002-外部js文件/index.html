@@ -1,0 +1,25 @@
+<!--
+    本程序的作用机制：
+    1：这个html被load
+    2：script.js被load，并设置触发：当html被load完毕之后执行函数helloMessage
+    3：html被load完毕
+    4：执行helloMessage函数
+    5：helloMessage函数中getElementById通过html中<h1>的id号，获取<h1>标签的索引
+    6：通过这个索引，向标签页中插入一段html代码。
+    注：id号是用来标示html中唯一的一个标签；
+        在一个html中不能出现多个标签具有相同的id。如果存在多个，则只对第一个有效
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <script src = "script.js">  </script>
+</head>
+<body>
+    <!-- 
+        <h1>中定义了一个唯一的id标示符，然后js中就可以通过这个标示符，
+        使用getElementById("helloMessage")来获取相应的标签
+    -->
+    <h1 id = "helloMessage"></h1>
+        <h1 id = "helloMessage"></h1>
+</body>
+</html>
