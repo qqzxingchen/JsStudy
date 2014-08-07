@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src = "script.js"></script>
+    <link href = "style.css" rel = "stylesheet">
+</head>
+<body>
+    <!--
+    唯一不使用表单而使得页面跳转到另一个页面的方法：使用cgi
+    -->
+    <form action = "#">
+        <!--
+        label可以通过for来绑定一个id，这时如果点击这个label，网页的焦点将会移动到具有这个id的标签
+        -->
+        <p>
+        <label for = "userName">Your Name:
+        <input type = "text" size = "30" id = "userName" class = "reqd"></label>
+        </p>
+        <p>
+        <label for = "passwd1">choose a password:
+        <input type = "password" size = "30" id = "passwd1" class = "reqd"></label>
+        </p>
+        <p>
+        <label for = "passwd2">verify your password:
+        <input type = "password" size = "30" id = "passwd2" class = "reqd passwd1"></label>
+        </p>
+        <p><input type = "submit" value = "Submit">&nbsp;<input type = "reset"></p>
+        
+    </form>
+
+</body>
+</html>

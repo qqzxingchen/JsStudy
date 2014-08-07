@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src = "script.js"></script>
+    <link href = "style.css" rel = "stylesheet">
+</head>
+<body>
+    <!--
+    唯一不使用表单而使得页面跳转到另一个页面的方法：使用cgi
+    -->
+    <form action = "gotoLocation.cgi" class = "centered">
+        <select id = "newLocation">
+            <option selected>Select a Topic</option>
+            
+            <option value = "index1.html">index1</option>
+            <option value = "index2.html">index2</option>
+            <option value = "index3.html">index3</option>
+            <option value = "index4.html">index4</option>
+            <option value = "index5.html">index5</option>
+            <option value = "index6.html">index6</option>            
+        </select>
+        <noscript>
+            <input type = "submit" value = "Go There!">
+        </noscript>
+    </form>
+
+</body>
+</html>
